@@ -1,0 +1,1214 @@
+type: horizontal-stack
+cards:
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '0'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_0.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '0'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '1'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_1.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '1'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '2'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_2.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '2'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '3'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_3.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '3'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '4'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_4.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '4'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '5'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_5.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '5'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '6'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_6.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '6'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '7'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_7.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '7'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '8'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_8.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '8'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '9'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_9.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '9'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '10'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_10.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '10'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '11'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_11.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '11'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '12'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_12.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '12'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '13'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_13.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '13'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '14'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_14.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '14'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '15'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_15.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '15'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '16'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_16.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '16'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '17'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_17.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '17'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '18'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_18.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '18'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '19'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_19.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '19'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '20'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_20.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '20'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '21'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_21.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '21'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '22'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_22.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '22'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '23'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_23.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '23'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '24'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_24.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '24'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '25'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_25.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '25'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '26'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_26.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '26'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '27'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_27.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '27'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '28'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_28.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '28'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '29'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_29.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '29'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '30'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_30.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '30'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '31'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_31.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '31'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '32'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_32.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '32'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '33'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_33.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '33'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '34'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_34.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '34'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '35'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_35.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '35'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '36'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_36.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '36'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '37'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_37.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '37'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '38'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_38.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '38'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '39'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_39.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '39'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '40'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_40.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '40'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '41'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_41.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '41'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '42'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_42.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '42'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '43'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_43.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '43'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '44'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_44.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '44'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '45'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_45.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '45'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '46'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_46.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '46'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '47'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_47.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '47'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '48'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_48.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '48'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '49'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_49.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '49'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '50'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_50.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '50'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '51'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_51.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '51'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '52'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_52.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '52'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '53'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_53.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '53'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '54'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_54.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '54'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '55'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_55.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '55'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '56'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_56.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '56'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '57'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_57.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '57'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '58'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_58.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '58'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '59'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_59.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '59'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '60'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_60.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '60'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '61'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_61.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '61'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '62'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_62.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '62'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '63'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_63.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '63'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '64'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_64.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '64'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '65'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_65.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '65'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '66'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_66.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '66'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '67'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_67.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '67'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '68'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_68.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '68'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '69'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_69.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '69'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '70'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_70.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '70'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '71'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_71.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '71'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '72'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_72.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '72'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '73'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_73.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '73'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '74'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh74.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '74'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '75'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_75.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '75'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '76'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_76.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '76'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '77'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_77.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '77'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '78'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_78.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '78'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '79'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_79.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '79'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '80'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_80.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '80'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '81'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_81.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '81'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '82'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_82.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '82'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '83'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_83.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '83'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '84'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_84.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '84'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '85'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_85.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '85'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '86'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_86.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '86'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '87'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_87.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '87'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '88'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_88.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '88'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '89'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_89.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '89'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '90'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_90.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '90'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '91'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_91.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '91'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '92'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_92.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '92'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '93'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_93.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '93'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '94'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_94.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '94'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '95'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_95.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '95'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '96'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_96.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '96'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '97'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_97.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '97'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '98'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_98.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '98'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '99'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_99.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '99'
+  - type: conditional
+    conditions:
+      - entity: SENSOR.REPLACE_THIS_SENSOR_NAME
+        state: '100'
+    card:
+      type: picture
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_100.png
+      tap_action:
+        action: none
+      hold_action:
+        action: none
+      alt_text: '100'
