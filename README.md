@@ -1,2 +1,56 @@
 # HA_3dPrinter_ProgressCard
 very dirty way to visually update 3d printing progress.
+
+![preview_printer_animation](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/1bbf4514-c7a7-4d42-ae96-47324079f197)
+
+### Features
+
+- Works on standard HA cards, no additional installation required.
+- Foolproof after you set it up
+- Three color schemes to pick from (white icons, gray and black), depending on your HA theme.
+
+### Requirements
+- a sensor that outputs integer value with progress in range from 0 to 100. Must be integer, as in "0", "15" "99", not "0.4" or "21.37"
+- default name of sensor that will affect animation is set to "prusa_completion_integer", but youre free to replace it
+- around 5mb of space for image sequence
+- notepad++
+- sftp file transfer program
+- patience for dumb solution for simple problem
+
+### INSTALATION
+- Lets start with copying neccessary files to correct location. This example will use white theme, adjust values/paths accordin to picked up theme.
+- Download this repo "source/3dp_w" folder, inside there is image sequence of percentage print completion, in white.
+- Put it with any preferred method into "config/www/" directory in your home assistant installation, so it looks like this:
+-![image](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/4856529f-9add-406f-972a-4dfc0199dee2). I've used SFTP transfer, to do it, you need first to install "Advanced SSH and WebTerminal" addon, and enable SFTP in config ( https://github.com/hassio-addons/addon-ssh ) - If you have other means of uploading lot of files, ignore this step, just make sure you put them into correct place.
+- Make sure your browser can access any of the images, You need to know either domain name your home assistant is running, or local IP adress of its installation, In my network I could access it under adress "http://10.0.0.24:8123/local/3dp_w/" + filename, like http://10.0.0.24:8123/local/3dp_w/3d_printer_mesh_1.png. All files are numbered from 0 to 100, so You access them by http://10.0.0.24:8123/local/3dp_w/3d_printer_mesh_XXX.png, where XXX is number of percentage. You probably should guess where were heading with this. 
+- Now the dumb part of work - using a conditional cards set up, that will display ONLY ONE card, depending on value of prusa_completion_integer sensor in my example. Adjust the code according to your sensor, or be sure that you have template sensor named prusa_completion_integer. If you don't have one or have no idea how to, I'll show example how to create one based on prusalink api in later section. But in reality, you can feed it any integer value from 0 to 100, so if you're using octoprint or parsing some other api, You'll probably be set up. Back to setting up cards.
+- Create new vertical stack card, and create one conditional card inside, pick_completion_integer sensor as source entity, and put value as 0. Click on "card" tab, pick Picture Card, and paste path to your "0" sequenced image, in my example: http://10.0.0.24:8123/local/3dp_w/3d_printer_mesh_0.png. Depending on your browser cache and network speed, you might see picture immidiately:
+- ![first_card_creation](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/a4fd9a4b-f068-4563-bfe8-faf6148fd71b)
+- Click on "Save", you should end up with image of printer with "0" on it, assuming youre not printing anything.
+
+- Now, do that 100 more times. Or use my uploaded YAML file for vertical card that I've generated using... maxscript, a scripting language for 3D Studio max, software that was used to render that printer animation - Since I had to script the percentage change every frame, I've realised I'll save myself lot of work if i also force it to generate and example YAML file for me, where I'd just replace values later. So, download the file (source/verticalCard.yaml.txt), open it up in your favorite text editing application that support replacing text (Notepad++ worked for me) and make sure that you:
+1. replace string SENSOR.REPLACE_THIS_SENSOR_NAME with string that points to your sensor (If youre following this tutorial in 100%, You probably have sensor.prusa_completion_integer name to use). In total, there should be 101 replacements:
+![image](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/802796c8-3d96-4bc3-b8b2-dfa6785e59b2)
+
+2. replace string URL.REPLACE_THIS_URL with url to your 3dp_w folder that is accessible by your browser. In my example, its http://10.0.0.24:8123/local, so it should look like this (101 replacements as well):
+![image](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/e4e5ab30-fd29-4a80-9a7c-ae680ea5e3e9)
+
+End result should be a file that is around 1214 lines long. Ctrl+A, Ctrl+C. Now we'll replace previously made vertical card with this prepped up code. Go back to your Home Asistant, and go into editing vertical card, "show code editor":
+![replacement_prepped_code](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/1d6c2c70-1601-4352-a05d-18a1c7c1b18e)
+
+Thats all for getting animating printer picture, that will change progress alongside printing percentage.
+Dont be scared if in edit mode your card looks like this:
+![image](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/2e47881e-48cf-40e9-a52d-373f5cbe975d)
+Keep in mind that you've basically stacked 101 "invisible" cards into one vertical stack. They wont be visible after you exit edit mode.
+
+If you want the card to look like mine with additional information:
+![image](https://github.com/propiro/HA_3dPrinter_ProgressCard/assets/21067369/ea86c67b-6bf4-4188-9391-2aaa3cb89b35)
+
+You'll need to add another one (102nd) card to vertical stack, and fill it with details (in my case its another vertical stack, with two time sensors and one horizontal stack for temperature). You'll also need to have the printer data in your home assistant installation, which depending on your setup, might be named/parsed completely different than mine. But I'll include gif that present how I've set up the card on my side nonentheless:
+
+
+
+As well fragment of the YAML configuration file (remember, this goes at the END of your vertical card stack, dont replace your code with it, add it at the end and make sure it parses correctly):
+
+
+
