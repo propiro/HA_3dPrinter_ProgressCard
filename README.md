@@ -103,4 +103,139 @@ ___Could? Probably yes. Would? No, because simply I dont have time to work on th
 
 ### BONUS! Creating sensor.prusa_completion_integer and feeding it from prusa api!
 
-TBD
+TBD writeup about prusalink openapi, but you can see how I've pulled data from prusalink host using REST, as well what jinji2 syntax I've used to parse data into things usable by home assistant. Write sob story how I've wasted 2 days trying to scrape prusalink website and how opensource stuff should be better documented.
+
+Most important (to make this animating icon work) things are "prusamk3d_progress" REST sensor with "completion" attribute, and TEMPLATE sensor prusa_completion_integer, which is used in this tutorial to feed integer progress data.
+
+``` 
+sensor: 
+  - platform: rest 
+    name: prusamk3s_progress 
+    authentication: digest 
+    username: USER
+    password: PASSWORD
+    scan_interval: 30 
+    resource: http://10.0.0.158/api/job 
+    value_template: "OK"
+    #value_template: "{{ value_json.value }}"
+    json_attributes_path: "progress" 
+    json_attributes: 
+      - "completion" 
+      - "pos_z_mm" 
+      - "printTime" 
+      - "printTimeLeft" 
+      - "printTimeLeftOrigin"
+      - "printSpeed"
+      - "flow_factor"
+
+      
+  - platform: rest 
+    name: prusamk3s_printer 
+    authentication: digest 
+    username: USER
+    password: PASSWORD
+    scan_interval: 30 
+    resource: http://10.0.0.158/api/printer
+    value_template: "OK" 
+    json_attributes_path: "telemetry" 
+    json_attributes: 
+      - "temp-bed" 
+      - "temp-nozzle" 
+      - "z-height" 
+      - "print-speed"
+      
+  - platform: rest 
+    name: prusamk3s_job 
+    authentication: digest 
+    username: USER
+    password: PASSWORD
+    scan_interval: 30 
+    resource: http://10.0.0.158/api/job 
+    value_template: "OK" 
+    json_attributes_path: "job" 
+    json_attributes: 
+      - "file" 
+      - "estimatedPrintTime"
+
+
+  - platform: template
+    sensors:
+       prusa_timeleft:
+         unit_of_measurement: minutes
+         value_template: >
+            {% if (state_attr('sensor.prusamk3s_progress', 'printTimeLeft') is number) %}
+            {{ (state_attr('sensor.prusamk3s_progress', 'printTimeLeft') /60) }}
+            {% else %}
+            0
+            {% endif %}
+       prusa_printtime:
+         unit_of_measurement: minutes
+         value_template: >
+            {% if (state_attr('sensor.prusamk3s_progress', 'printTime') is number) %}
+            {{ (state_attr('sensor.prusamk3s_progress', 'printTime') /60 |round(1, 'floor')) }}
+            {% else %}
+            0
+            {% endif %}            
+       prusa_estimatedprinttime:
+         unit_of_measurement: minutes
+         value_template: >
+           {{ (state_attr('sensor.prusamk3s_job', 'estimatedPrintTime') /60)|round(0, 'floor') }}
+           
+       prusa_completion:
+         unit_of_measurement: '%'
+         value_template: >
+           {% if (state_attr('sensor.prusamk3s_progress', 'completion') is number) %}
+           {{ (state_attr('sensor.prusamk3s_progress', 'completion') *100) }}
+           {% else %}
+           0
+           {% endif %}
+           
+       prusa_completion_integer:
+         unit_of_measurement: '%'
+         value_template: >
+           {% if (state_attr('sensor.prusamk3s_progress', 'completion') is number) %}
+           {{ (state_attr('sensor.prusamk3s_progress', 'completion') *100)|round(0, 'floor') }}
+           {% else %}
+           0
+           {% endif %}
+           
+       print_completion_integer:
+         unit_of_measurement: '%'
+         value_template: >
+           {% if (state_attr('sensor.prusamk3s_progress', 'completion') is number) %}
+           {{ (state_attr('sensor.prusamk3s_progress', 'completion') *100)|round(0, 'floor') }}
+           {% else %}
+           0
+           {% endif %}
+           
+       prusa_timeleft_ts:
+          value_template: >
+           {% if (state_attr('sensor.prusamk3s_progress', 'printTimeLeft') is number) %}
+           {% set t = state_attr('sensor.prusamk3s_progress', 'printTimeLeft')|int %}
+           {{'{:02d}:{:02d}:{:02d}'.format((t // 3600) % 24, (t % 3600) // 60, (t % 3600) % 60) }}
+           {% else %}
+           "Done"
+           {% endif %}
+           
+       prusa_printtime_ts:
+          value_template: >
+           {% if (state_attr('sensor.prusamk3s_progress', 'printTime') is number) %}
+           {% set t = state_attr('sensor.prusamk3s_progress', 'printTime')|int %}
+           {{'{:02d}:{:02d}:{:02d}'.format((t // 3600) % 24, (t % 3600) // 60, (t % 3600) % 60) }}
+           {% else %}
+           "Done"
+           {% endif %}              
+           
+       prusa_estimatedprinttime_ts:
+          value_template: >
+           {% if (state_attr('sensor.prusamk3s_job', 'estimatedPrintTime') is number) %}
+           {% set t = state_attr('sensor.prusamk3s_job', 'estimatedPrintTime')|int %}
+           {{'{:02d}:{:02d}:{:02d}'.format((t // 3600) % 24, (t % 3600) // 60, (t % 3600) % 60) }}
+           {% else %}
+           "unavailable"
+           {% endif %}              
+
+```
+
+
+
