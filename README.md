@@ -93,7 +93,7 @@ Remember that this is my config, so it have my sensors/entities - if you copy it
 
 ### FAQ
 - why its so inefficient and use 101 Conditional cards?
-___I'm 3D Designer, not a frintend guy - I've tried creating fake camera that'd update still picture according to sensor, but ran into lot of troubles, and using HTML Template card would require too much external resources that I really didn't wanted to use___
+___I'm 3D Designer, not a frontend guy - I've tried creating fake camera that'd update still picture according to sensor, but ran into lot of troubles, and using HTML Template card would require too much external resources that I really didn't wanted to use___
 - This could be done using XYZ component of QWERTY.js 
 ___You're most likely right, but I'm neither aware of that solution, nor had time to test everything. Youre more than welcome to do pull request or contact me directly and suggest simple, working alternative that wont take 1200 lines of yaml___
 - Could this animation show my current printing object?
