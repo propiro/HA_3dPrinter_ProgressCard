@@ -14,7 +14,7 @@ very dirty way to visually update 3d printing progress.
 - default name of sensor that will affect animation is set to "prusa_completion_integer", but youre free to replace it
 - around 5mb of space for image sequence
 - notepad++
-- sftp file transfer program
+- sftp program to push lot of images to HA www folder
 - patience for dumb solution for simple problem
 
 ### INSTALATION
