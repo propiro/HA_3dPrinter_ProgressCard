@@ -894,7 +894,7 @@ cards:
         state: '74'
     card:
       type: picture
-      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh74.png
+      image: URL.REPLACE_THIS_URL/3dp_w/3d_printer_mesh_74.png
       tap_action:
         action: none
       hold_action:
